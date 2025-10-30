@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'TT Lakes Thin';
+    src: url('fonts/TTLakes-Thin.woff');
+    src: url('fonts/TTLakes-Thin.woff') format('embedded-opentype'),
+    url('fonts/TTLakes-Thin.woff') format('woff'),
+    url('fonts/TTLakes-Thin.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+.service-page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: "TT Lake", sans-serif;
+    background:#FFFFFF;
+}
+.service-page__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #80949F;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+    
+.service-page__menu-btn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.service-page__logo{
+    position: relative;
+
+}
+     /* завернуть 2 эти кнопки ниже в div */
+.separator {
+    display: inline-block; /* Или block, в зависимости от контекста */
+    width: 2px; 
+    height: 32px; 
+    background-color: #EAEAEA;
+    margin: 0 10px; 
+    vertical-align: middle; 
+    border-radius: 1px;
+    }
+.service-page__service-btn{
+    /* display: block; */
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.service-page__checkstatus-btn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.service-page__menu{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.service-page__menu-wrapper{
+    display: flex;
+    gap: 8px;
+    min-width: max-content;
+}
+
+.menu__item{
+    width: 246px;
+    height: 40px;
+    top: 176px;
+    left: 16px;
+    opacity: 1;
+    border-radius: 16px;
+    border-color: #B8FFEC;
+    border: 2px;
+    color: #7E7E82;
+    font-size: 16px;
+    font-weight: 500;
+}
+.services-page__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+.service-page__description p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+.services__readmore{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1B1C21;
+    text-decoration: none;
+}
+.service-page__image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+@media (min-width: 431px) {
+.service-page__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 32px;
+}
+.service-page__menu-wrapper {
+    justify-content: flex-start;
+}
+.service-page__menu{
+    flex-wrap: wrap;
+    margin: 10px;
+    overflow: hidden;
+}
+}
