@@ -42,9 +42,12 @@
 
 .service-page__logo{
     position: relative;
-
 }
-     /* завернуть 2 эти кнопки ниже в div */
+.service-page__btn-wrapper{
+    align-items: flex-end;
+    display: flex;
+    gap: 30px;
+}
 .separator {
     display: inline-block; /* Или block, в зависимости от контекста */
     width: 2px; 

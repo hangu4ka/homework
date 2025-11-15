@@ -1,0 +1,61 @@
+@font-face {
+    font-family:'TT Lakes Thin';
+    src: url('fonts/TTLakes-Thin.woff');
+    src: url('fonts/TTLakes-Thin.woff') format('embedded-opentype'),
+    url('fonts/TTLakes-Thin.woff') format('woff'),
+    url('fonts/TTLakes-Thin.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.mobile-menu{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100hv;
+    background-color: #FFFFFF;
+}
+.mobile-menu__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.mobile-menu__btn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: filter 0.3s, opacity 0.3s;
+}
+.mobile-menu__btn:hover{
+    filter: brightness(0.8);
+    opacity: 0.7;
+}
+
+
+.mobile-menu__icons{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;;
+}
+
+.mobile-menu__icon{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: filter 0.3s, opacity 0.3s;
+}
