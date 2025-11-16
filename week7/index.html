@@ -7,8 +7,8 @@
     <title>Menu</title>
 </head>
 <body>
-    <nav class="mobile-menu">
-        <div class="mobile-menu__header">
+    <aside class="mobile-menu__fixed">
+        <header class="mobile-menu__header">
             <button class="mobile-menu__btn mobile-menu__btn__close">
                 <img src="./assets/iconX.png">
             </button>
@@ -16,9 +16,10 @@
                 <img src="./assets/logo.png" alt="logo">
             </div>
             <button class="mobile-menu__btn mobile-menu__search">
-                <img src="./assets/icon.png">
+                <img src="./assets/icon_search.png">
             </button>
-            </div>
+        </header>
+        <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
     <li class="mobile-menu__item mobile-menu__item--active">Ремонт техники</li>
     <li class="mobile-menu__item">Услуги и сервисы</li>
@@ -29,15 +30,16 @@
     <li class="mobile-menu__item">Наши сервисные центры</li>
     <li class="mobile-menu__item">Контакты</li>
         </ul>
-        <div class="mobile-menu__footer">
-            <div class="mobile-menu__icons">
-            <button class="mobile-menu__icon mobile-menu__icon--phone">
+        </nav>
+        <footer class="mobile-menu__footer">
+            <div class="mobile-menu__contacts">
+            <button class="mobile-menu__btn mobile-menu__btn--phone">
                 <img src="./assets/phone.png">
             </button>
-            <button class="mobile-menu__icon mobile-menu__icon--chat">
-                <img src="assets/icon_chat.png" alt="">
+            <button class="mobile-menu__btn mobile-menu__btn--chat">
+                <img src="assets/icon.png" alt="">
             </button>
-            <button class="mobile-menu__icon mobile-menu__icon--profile">
+            <button class="mobile-menu__btn mobile-menu__btn--profile">
                 <img src="assets/Group.png" alt="">
             </button>
             </div>
@@ -48,7 +50,7 @@
                 <span class="mobile-menu__lang-item">EN</span>
                 <span class="mobile-menu__lang-item">CH</span>
             </div>
-        </div>
-    </nav>
+        </footer>
+    </aside>
 </body>
 </html>
