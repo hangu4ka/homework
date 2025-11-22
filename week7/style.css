@@ -1,9 +1,6 @@
 @font-face {
-    font-family:'TT Lakes Thin';
-    src: url('fonts/TTLakes-Thin.woff');
-    src: url('fonts/TTLakes-Thin.woff') format('embedded-opentype'),
-    url('fonts/TTLakes-Thin.woff') format('woff'),
-    url('fonts/TTLakes-Thin.woff') format('truetype');
+    font-family:'TT Lakes Neue';
+    src: url('fonts/TT\ Lakes\ Neue\ Trial\ Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
@@ -21,7 +18,8 @@
     height: 100%;
     box-shadow: 4px 0 24px rgba(0,0,0,0.06);
     background-color: #FFFFFF;
-    font-family: "TT Lake", sans-serif;
+    font-family: "TT Lakes Neue", sans-serif;
+    font-feature-settings: "zero" 1;
 }
 .mobile-menu__header{
     display: flex;
@@ -63,38 +61,56 @@
     color: #1B1C21;
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     cursor: pointer;
     transition: opacity 0.2s;
     opacity: 0.95;
 }
 .mobile-menu__item:hover{
-
+    opacity: 0.6;
 }
 
 .mobile-menu__footer{
-
+padding: 0 0 32px 24px;
 }
 
 .mobile-menu__contacts{
     display: flex;
     align-items: flex-start;
-    gap: 20px;;
+    gap: 20px;
+    margin-bottom: 10px;
 }
 /* кнопкам нужно поменять класс, чтобы можно было применить display */
 
 .mobile-menu__email{
-
-}
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color:#1B1C21;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    }
 
 .mobile-menu__phone{
-
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color:#1B1C21;
 }
 
 .mobile-menu__lang{
-
+    display: flex;
+    gap: 16px;
 }
 
 .mobile-menu__lang-item{
-
+font-size: 16px;
+font-weight: 500;
+color: #1B1C21;
+cursor: pointer;
+transition: color 0.3s;
+}
+.mobile-menu__lang-item--active{
+    color: #7E7E82;
 }
