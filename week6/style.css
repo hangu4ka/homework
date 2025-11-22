@@ -1,9 +1,6 @@
 @font-face {
-    font-family: 'TT Lakes Thin';
-    src: url('fonts/TTLakes-Thin.woff');
-    src: url('fonts/TTLakes-Thin.woff') format('embedded-opentype'),
-    url('fonts/TTLakes-Thin.woff') format('woff'),
-    url('fonts/TTLakes-Thin.woff') format('truetype');
+    font-family: 'TT Lakes Neue';
+    src: url('fonts/TT\ Lakes\ Neue\ Trial\ Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
@@ -15,7 +12,7 @@
     min-height: 100vh;
     padding: 0;
     margin: 0;
-    font-family: "TT Lake", sans-serif;
+    font-family: "TT Lakes Neue", sans-serif;
     background:#FFFFFF;
 }
 .service-page__header{
