@@ -1,6 +1,6 @@
 @font-face {
-    font-family:'TT Lakes Neue';
-    src: url('fonts/TT\ Lakes\ Neue\ Trial\ Regular.ttf') format('truetype');
+    font-family:'TT Lakes';
+    src: url('fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
@@ -18,7 +18,7 @@
     height: 100%;
     box-shadow: 4px 0 24px rgba(0,0,0,0.06);
     background-color: #FFFFFF;
-    font-family: "TT Lakes Neue", sans-serif;
+    font-family: "TT Lakes", sans-serif;
     font-feature-settings: "zero" 1;
 }
 .mobile-menu__header{
@@ -60,7 +60,7 @@
 .mobile-menu__item{
     color: #1B1C21;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 20px;
     cursor: pointer;
     transition: opacity 0.2s;
@@ -113,4 +113,7 @@ transition: color 0.3s;
 }
 .mobile-menu__lang-item--active{
     color: #7E7E82;
+}
+@media (max-width:320px){
+    .mobile-menu__fixed
 }
