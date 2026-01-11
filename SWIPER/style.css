@@ -1,0 +1,190 @@
+@font-face {
+    font-family:'TT Lakes';
+    src: url('fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.brands {
+    padding: 16px 8px;
+    background: #F8F8F8;
+    font-family: "TT Lakes", sans-serif;
+}
+
+.brands__head {
+    margin-bottom: 16px;
+}
+
+.brands__title {
+    font-size: 16px;
+    margin: 0 0 24px;
+    text-transform: uppercase;
+    color: #7E7E82;
+}
+
+.brands__slider {
+    overflow: hidden;
+}
+
+.brands__list {
+    display: flex;
+}
+
+.brands__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    padding: 16px 24px;
+    background-color: #F8F8F8;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+}
+
+/* .brands__logo{
+    display: flex;
+    align-items: center;
+    max-width: 140px;} */
+
+.brands__logo-img {
+    max-width: 120px;
+    max-height: 40px;
+    object-fit: contain;
+}
+
+.brands__icon {
+    display: flex;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.brands__icon-img {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination {
+    margin-top: 16px;
+    position: static;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #DDDDDD;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.change-btn {
+    display: none;
+    margin-top: 16px;
+    margin-left: 16px;
+    padding: 0;
+    font-size: 16px;
+    font-family: "TT Lakes", sans-serif;
+    color: #1B1C21;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    padding-left: 24px;
+}
+
+.change-btn::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    left: 0;
+    top: 6px;
+    background: url("assets/toggle.png") center/contain no-repeat;
+    /* background-position: center;
+    background-size: contain; */
+    transition: transform 0.2s;
+}
+
+.change-btn--open::before {
+    transform: rotate(180deg);
+}
+
+@media (min-width:431px) and (max-width: 768px) {
+    .brands__slider {
+        overflow: visible;
+}
+    .brands__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+}
+    .brands__item{
+        width: calc(33.333% - 11px);
+}
+    .swiper-pagination{
+        display: none;
+}
+    .change-btn{
+        display: inline-flex;
+}
+    .brands__list--collapsed .brands__item:nth-child(n+7) {
+        display: none;
+}
+}
+
+@media screen and (min-width:769px) {
+    .brands{
+        padding: 32px;
+    }
+    .brands__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .brands__item{
+        width: calc(25% - 12px);
+    }
+
+    .brands__list--collapsed .brands__item:nth-child(n+9) {
+        display: none;
+}
+    .swiper-pagination{
+        display: none;
+    }
+
+    .change-btn{
+        display: inline-flex;
+        margin: 0 0 0 auto;
+        align-self: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .brands__slider.swiper {
+        overflow: visible;
+    }
+    
+    .brands__list.swiper-wrapper {
+        transform: none !important;
+        flex-wrap: wrap;
+    }
+    
+    .brands__item.swiper-slide {
+        transform: none !important;
+        margin: 0 !important;
+    }
+}
+
+
+
