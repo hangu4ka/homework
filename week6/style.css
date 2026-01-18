@@ -46,7 +46,7 @@
     gap: 30px;
 }
 .separator {
-    display: inline-block; /* Или block, в зависимости от контекста */
+    display: inline-block; 
     width: 2px; 
     height: 32px; 
     background-color: #EAEAEA;
