@@ -136,6 +136,7 @@
 }
     .change-btn{
         display: inline-flex;
+        background-color: #F8F8F8;
 }
     .brands__list--collapsed .brands__item:nth-child(n+7) {
         display: none;
@@ -167,6 +168,8 @@
         display: inline-flex;
         margin: 0 0 0 auto;
         align-self: center;
+        background-color: #F8F8F8;
+
 
     }
 }
