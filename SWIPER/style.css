@@ -167,12 +167,14 @@
         display: inline-flex;
         margin: 0 0 0 auto;
         align-self: center;
+
     }
 }
 
 @media (min-width: 769px) {
     .brands__slider.swiper {
         overflow: visible;
+        margin-bottom: 20px;
     }
     
     .brands__list.swiper-wrapper {
